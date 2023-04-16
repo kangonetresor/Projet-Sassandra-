@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Participez</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./img/logosassandra.png">
+    <style>
+        h1{
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .formulaire{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            background-color: #441a00;
+            padding: 10px;
+            border-radius: 6px;
+            box-shadow: 0 0 10px rgb(44, 35, 35);
+        }
+        .parite-saisie{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+        }
+        .parite-saisie div{
+            display: flex;
+            flex-direction: column;
+        }
+        .parite-saisie div{
+            width: 49%;
+        }
+        label{
+            margin-bottom: 6px;
+        }
+        input{
+            margin-bottom: 5px;
+            padding: 5px;
+            outline: 0;
+            border: 1px solid rgba(0,0,0,0.4);
+        }
+        input:focus{
+            border: 1px solid #441a00;
+        }
+        input[type="submit"]{
+            margin-top: 15px;
+            background-color: #733e1d;
+            color: #fff;
+            border: 1px solid #733e1d;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h1 style="margin-top: 20px;">
+            Participez
+        </h1>
+    </header>
+    <h3 style="text-align: center;">
+        Participez au développement et à la redynamisation de notre belle ville de Sassandra en faisant un don. 
+    </h3>
+
+    <div class="formulaire">
+        <form action="">
+            <h4 style="text-decoration: none; text-align: center; font-size: 20px;">PARTICIPATION</h4>
+            <hr>
+            <div class="parite-saisie">
+                <div>
+                    <label>Nom :</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label>Prénom :</label>
+                    <input type="text">
+                </div>
+            </div>
+
+            <label>Adresse Mail :</label>
+            <input type="text">
+            <label>Montant de votre donation :</label>
+            <input type="Montant">
+            <input type="submit" value="Validez">
+            
+
+        </form>
+    </div>
+
+    <h3 style="display: flex; align-items: center; justify-content: center;">
+        Merci d'avoir contribuer
+        <div style="margin-left: 50px; margin-bottom: 0.5rem;">
+            <a href="./index1.html" style="padding-left: 1.2rem; padding-right: 1.2rem; border: 0.1rem solid #fff; border-radius: 30px; background-color: #fff; text-transform: uppercase; color: black;">Retour</a>
+        </div>
+    </h3>
+
+
+
+    <hr style="margin: 10px;">
+    <footer>
+        <div class="copyright">
+            <p>&#169; Copyright Sassandra Tourisme</p>
+            <p>2023 Tout droit réservé</p>
+        </div>
+    </footer>
+
+</body>
+</html>
