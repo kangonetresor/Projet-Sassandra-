@@ -175,6 +175,17 @@ h4{
 #acceuil{
     margin-top: 25px;
 }
+
+.visite-sassandra{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+}
+.image-acceuil img {
+    max-width: 100%;
+}
+
 .text-acceuil h1{
      font-size: 1.4rem;
      margin: 5px 0 10px;
@@ -226,12 +237,13 @@ span{
     display: flex;
     flex-direction: column;
 }
+
 .image-diversite{
     display: flex;
     flex-direction: row;
-    
+    justify-content: center;
     gap: 15px;
-}
+} 
 
 .les-imagehistorique img, .faunee img, .agrii img, .image-diversite img{
     max-width: 400px;
@@ -240,6 +252,18 @@ span{
     transform: scale(1.1);
     transition: all 0.5s ease;
 }
+
+.agrii{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.agrii div{
+    display: flex;
+    flex-direction: column;
+}
+
 
 #contactez-nous{
     display: flex;
@@ -277,7 +301,4 @@ footer .copyright{
 
 }
 
-@media screen and (max-width: n ) {
-    
-}
 

@@ -7,6 +7,29 @@
     <title>Decouverte de Sassandra</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="./img/logosassandra.png">
+
+
+    <!-- responsivite -->
+    <style>
+        @media screen and (max-width: 800px) {
+            
+
+            .agrii, .image-diversite, .faunee, .image, .visite-sassandra{
+                display: flex;
+                flex-direction: column;
+            }
+            h1, h2, p, div{
+                text-align: center;
+            }
+            h2{
+                text-decoration: underline;
+            }
+            
+        }
+
+        
+    </style>
+
 </head>
 <body>
     <nav>
@@ -25,15 +48,17 @@
 
     <!-- Section Acceuil -->
     <section id="acceuil">
-        <div class="text-acceuil">
-            <h2>Bienvenue sur le site officiel du tourisme de Sassandra.</h2>
-            <h1>Ici vous en saurez plus sur Sassandra, <br>Mais pas que cela vous decouvrirez <br> les merveilles de cette belle ville. </h1>
-            <p>Alors laissez vous guider...</p>
-        </div>
+        <div class="visite-sassandra">
+            <div class="text-acceuil">
+                <h2>Bienvenue sur le site officiel du tourisme de Sassandra.</h2>
+                <h1>Ici vous en saurez plus sur Sassandra, <br>Mais pas que cela vous decouvrirez <br> les merveilles de cette belle ville. </h1>
+                <p>Alors laissez vous guider...</p>
+            </div>
 
-        <!-- images de garde -->
-        <div class="image-acceuil">
-            <img src="./image-de-la-ville-de-sassandra.jpg" alt="">
+            <!-- images de garde -->
+            <div class="image-acceuil">
+                <img src="./image-de-la-ville-de-sassandra.jpg" alt="">
+            </div>
         </div>
 
         <a href="#presentattion" class="click-bas">
@@ -71,10 +96,6 @@
             <div class="image">
                 <!-- Maison du gouverneur -->
                 <div>
-                    <img src="./img/imgHistoriques/Sassandra-Maison-Gouverneur.jpg" alt="">
-                    <img src="./img/imgHistoriques/Sassandra-Maison-Gouverneur-ruines.jpg" alt="">
-                </div>
-                <div>
                     <span>Anciennne Maison du Gouverneur Louis Gustave Binger</span>
                     <p>
                         Moins connue et moins fréquentée que Grand-Bassam, la ville de Sassandra n’en est pas moins 
@@ -88,13 +109,17 @@
                         Les jardins du palais, logés à la même enseigne, sont abandonnés à leur triste sort.
                     </p>
                 </div>
+                <div>
+                    <img src="./img/imgHistoriques/Sassandra-Maison-Gouverneur.jpg" alt="">
+                    <img src="./img/imgHistoriques/Sassandra-Maison-Gouverneur-ruines.jpg" alt="">
+                </div>
+
             </div>
             <br>
             <br>
 
             <!-- Pont Weygan  -->
             <div class="image">
-                <img src="./img/imgHistoriques/Sassandra-pont-Weygand.jpg" alt="">
                 <div>
                     <span>Pont Weygand</span>
                     <p>
@@ -103,13 +128,14 @@
                         Il porte le nom du général Weygand, administrateur colonial de Côte d'Ivoire.
                     </p>
                 </div>
+                <img src="./img/imgHistoriques/Sassandra-pont-Weygand.jpg" alt="">
+
             </div>
             <br>
             <br>
 
             <!-- Agence de la BAO -->
             <div class="image">
-                <img src="./img/imgHistoriques/Sassandra-BAO.jpg" alt="">
                 <div>
                     <span>Ancienne Agence de la BAO</span>
                     <p>
@@ -120,13 +146,14 @@
                         de l’ouvrir à coup d’armes à feux mais rien y fit, le coffre ne s’est jamais ouvert.
                     </p>
                 </div>
+                <img src="./img/imgHistoriques/Sassandra-BAO.jpg" alt="">
+
             </div>
             <br>
             <br>
 
             <!-- Memorial -->
             <div class="image">
-                <img src="./img/imgHistoriques/Sassandra-Mémorial.jpg" alt="">
                 <div>
                     <span>Mémorial des Victimes de 1943</span>
                     <p>
@@ -136,13 +163,14 @@
                          des navires Allemand le 25 décembre 1943.
                     </p>
                 </div>
+                <img src="./img/imgHistoriques/Sassandra-Mémorial.jpg" alt="">
+
             </div>
             <br>
             <br>
 
 
             <div class="image">
-                <img src="./img/imgHistoriques/Sassandra-Tunel-Drewin.jpg" alt="">
                 <div>
                     <span>Tunel de Drewin</span>
                     <p>
@@ -153,13 +181,14 @@
                         de ces caves au bout de laquelle se trouve une dalle en ciment bouchant un « tunnel de la honte ».
                     </p>
                 </div>
+                <img src="./img/imgHistoriques/Sassandra-Tunel-Drewin.jpg" alt="">
+
             </div>
             <br>
             <br>
 
 
             <div class="image">
-                <img src="./img/imgHistoriques/Sassandra-quartier-colonial.jpg" alt="">
                 <div>
                     <span>Les Anciens magazins</span>
                     <p>
@@ -168,6 +197,8 @@
                         continental qu’au niveau mondiale.
                     </p>
                 </div>
+                <img src="./img/imgHistoriques/Sassandra-quartier-colonial.jpg" alt="">
+
             </div>
         </div>
     </section>
@@ -181,7 +212,6 @@
         <br>
         <div class="faunee">
             <div class="image">
-                <img src="./img/faune/Sassandra-Singes.jpg" alt="">
                 <div>
                     <span>Les Singes de la forêt sacrée</span>
                     <p>
@@ -191,13 +221,14 @@
                         D’où leurs nom les singes sacrés de Gbetitapea. 
                     </p>
                 </div>
+                <img src="./img/faune/Sassandra-Singes.jpg" alt="">
+
             </div>
             <br>
             <br>
     
     
             <div class="image">
-                <img src="./img/faune/Sassandra-hippos.jpg" alt="">
                 <div>
                     <span>Hippopotame du fleuve Sassandra</span>
                     <p>
@@ -205,6 +236,8 @@
                         lorsque vous visitez le fleuve Sassandra s’y beigner.
                     </p>
                 </div>
+                <img src="./img/faune/Sassandra-hippos.jpg" alt="">
+
             </div>
         </div>
 
@@ -217,49 +250,37 @@
     <section id="agri">
         <div class="presentation">
             <h2>Agriculture</h2>
-            <h1>Dans cette partie vous découvrirez certains des produits agricoles cultives à Sassandra</h1>
+            <h1>Dans cette partie on a certains des produits agricoles cultives à Sassandra</h1>
         </div>
         <br>
         <div class="agrii">
-            <div class="image">
+            <div>
+                <span>Le Palmier a huile</span>
                 <img src="./img/Agri/palmier.jpg" alt="">
-                <div>
-                    <span>Le Palmier a huile</span>
-                    <p>
-
-                    </p>
-                </div>
+                
             </div>
-            <br>
-            <br>
-    
-    
-            <div class="image">
+
+
+            <div>
+                <span>Le cafe</span>
                 <img src="./img/Agri/cafe.jpg" alt="">
-                <div>
-                    <span>Le café</span>
-                    <p></p>
-                </div>
+                
             </div>
-            <br>
-            <br>
+        </div>
+        <br>
+        <br>
 
-            <div class="image">
+        <div class="agrii">
+            <div>
+                <span>Le cacao</span>
                 <img src="./img/Agri/cacao.jpg" alt="">
-                <div>
-                    <span>Le cacao</span>
-                    <p></p>
-                </div>
+                
             </div>
-            <br>
-            <br>
-
-            <div class="image">
+        
+            <div>
+                <span>La banane</span>
                 <img src="./img/Agri/banane.jpg" alt="">
-                <div>
-                    <span>La banane plantain</span>
-                    <p></p>
-                </div>
+                
             </div>
         </div>
     </section>
@@ -276,67 +297,68 @@
 
 
             <div class="image-diversite">
-                <img src="./img/Diversité/Sassandra-danses-Neyo-1024x640.jpg" alt="">
-
                 <div>
                     <span>La Danse Neyo</span>
                     <p>
                         Les Néyo, un peuple localisé au sud-ouest de la Côte d’Ivoire, en bordure de l’océan atlantique, dans la région du Gbôklè précisément à Sassandra possède une danse qui lui est chaire qui se nomme le Néné-yo. Elle est souvent dansée lord de réjouissances mais aussi de funérailles, c’est une danse très mystique qui ne laisse personne indifférents lord de son exécution. Il faut noter que c’est l’une des rare danse de peuple ivoirien qui ne porte pas de masque.
                     </p>
                 </div>
-                
-                </div>
+                <img src="./img/Diversité/Sassandra-danses-Neyo-1024x640.jpg" alt="">
+
+
             </div>
             <br>
             
 
             <div class="image-diversite">
-                <img src="./img/Diversité/pecheurs.jpg" alt="">
                 <div>
                     <span>Les Pecheurs</span>
-                    <p></p>
+                    <p>
+                        Sassandra est une ville côtière, de se faite la majeure partie de la population s'a donne à la pèches et autres activités qui en ressort. Les pécheurs de Sassandra sont en minorité ivoirien, la plupart viennent des pays de la sous-région tels que le Ghana, le Togo, Benin etc… 
+                        <br>
+                        Cela montre en plus l’hospitalier des habitant.
+                    </p>
                 </div>
-                
-                </div>
+                <img src="./img/Diversité/pecheurs.jpg" alt="">
+
             </div>
             <br>
             
 
             <div class="image-diversite">
-                <img src="./img/Diversité/Gôdé-Plage-Sassandra-Côte-dIvoire-1-1170x780.jpg" alt="">
                 <div>
                     <span>Plage Gôdé</span>
-                    <p></p>
+                    <p>
+                        La plage gôdé est une plage magnifique. Chaque année à des occasions festives des jeunes de tous les horizons s'y trouve pour pratiquer un sport de l'extrême appelé <strong>le surf</strong>. Il est même prédit que dans quelques années cette portion de plage deviendra l'un des pôles de surf de toute la sous-région continentale.
+                    </p>
                 </div>
-                
-                </div>
+                <img src="./img/Diversité/Plage-de-Batelebre-Sassandra-Côte-dIvoire-1-1-1170x780.jpg" alt="">
+
             </div>
             <br>
             
 
             <div class="image-diversite">
-                <img src="./img/Diversité/Maquis-Palmier-Sassandra-Côte-dIvoire-1-1-1170x780.jpg" alt="">
                 <div>
                     <span>Le Maquis Palmier</span>
                     <p>
                         Petit maquis-bar-discothèque les pieds dans le sable, il est cerné d'un côté par les pirogues et de l'autre par le wharf. Il est le rendez-vous incontournable du Tout-Sassandra. Habitués et visiteurs ont plaisir à s'y retrouver en soirée (dimanche zouglou, fêtes coupé-décalé, anniversaires, etc.).
                     </p>
                 </div>
-                
-                </div>
+                <img src="./img/Diversité/Maquis-Palmier-Sassandra-Côte-dIvoire-1-1-1170x780.jpg" alt="">
+
             </div>
             <br>
 
             <div class="image-diversite">
-                <img src="./img/Diversité/Sassandra-port-Fanti.jpg" alt="">
                 <div>
                     <span>Le Port Fanti</span>
                     <p>
                         Premier port artisanal de Côte d'Ivoire, le port Fanti offre un spectacle magnifique lorsque les pêcheurs, partis en mer la veille, reviennent avec leurs embarcations chargées de poisson le lendemain matin, accueillis par les femmes et les enfants qui s'égaillent à grands cris dans les embruns. Une parade nautique exubérante et magique quotidienne, dont on profitera encore mieux depuis les hauteurs de l'hôtel La Terrasse (qui porte bien son nom puisque celle-ci offre une vue imprenable sur le port). 
                     </p>
                 </div>
-                
-                </div>
+                <img src="./img/Diversité/Sassandra-port-Fanti.jpg" alt="">
+
             </div>
         </div>
     </section>

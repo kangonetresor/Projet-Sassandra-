@@ -7,6 +7,37 @@
     <title>Mairie de Sassandra</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="./img/logosassandra.png">
+
+
+    <style>
+
+        @media screen and (max-width: 800px) {
+            .img1{
+                background-image: url(./image_acceuil.jpg);
+                background-size: cover;
+                background-position: center;
+                width: 100%;
+                height: 100%;
+                visibility: inherit;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .mots-du-maire{
+                display: flex;
+                flex-direction: column;
+            }
+            .photo-du-maire, .les-mots-du-maire{
+                display: flex;
+                flex-direction: column;
+                gap: 1.25rem;
+            }
+
+
+            
+        }
+    </style>
 </head>
 <body>
     
@@ -25,7 +56,7 @@
                 </ul>
             </li>
             <li class="menu-municipalite"><a href="index3.html"> Municipalité</a></li>
-            <li><a href="index2.html" class="bouton-actif"> visitez de la ville</a></li>
+            <li><a href="index2.html" class="bouton-actif"> visite de la ville</a></li>
             <li><a href="./index4.html"> Participez</a></li>
             <li><a href="#contactez-nous" class="bouton-actif"> Nous contacter</a></li>
         </ul>
