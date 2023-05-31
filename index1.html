@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mairie de Sassandra</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="./img/logosassandra.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./images/logosassandra.png">
 
 
     <style>
 
         @media screen and (max-width: 800px) {
             .img1{
-                background-image: url(./image_acceuil.jpg);
+                background-image: url(./images_pre_face/image_acceuil.jpg);
                 background-size: cover;
                 background-position: center;
                 width: 100%;
@@ -33,9 +33,6 @@
                 flex-direction: column;
                 gap: 1.25rem;
             }
-
-
-            
         }
     </style>
 </head>
@@ -44,21 +41,30 @@
     <nav>
 
         <!-- Logo -->
-        <a href="./index1.html" class="logo"> <img src="./img/logosassandra.png">&nbsp; Mairie de Sassandra</a>
+        <a href="./index1.html" class="logo"> <img src="./images/logosassandra.png">&nbsp; Mairie de Sassandra</a>
 
         <!-- Les options -->
         <ul class="menu">
-            <li class="menu-services"><a href="#services">Services &nbsp; <img src="./img/down-arrow-alt-regular-24.png" alt=""> </a>
+            <li class="menu-services"><a href="#services">Services &nbsp; <img src="./images/icones/down-arrow-alt-regular-24.png" alt=""> </a>
                 <ul class="sub-menu">
                     <li><a href="#services">Etat civil</a></li>
                     <li><a href="#etabliss">Etablissement de</a></li>
                     <li><a href="#precess">Procedure de</a></li>
                 </ul>
             </li>
-            <li class="menu-municipalite"><a href="index3.html"> Municipalité</a></li>
-            <li><a href="index2.html" class="bouton-actif"> visite de la ville</a></li>
-            <li><a href="./index4.html"> Participez</a></li>
-            <li><a href="#contactez-nous" class="bouton-actif"> Nous contacter</a></li>
+            <li class="RealServices"> <a> Faire une demande &nbsp; <img src="./images/icones/down-arrow-alt-regular-24.png" alt=""> </a>
+                <ul class="sub-menu"> 
+                    <li> <a href="./Demandes/naissances/naissances (1).php" target="_blank"> D'acte de Naissance</a></li>
+                    <li> <a href="./Demandes/mariage/mariages (1).php" target="_blank"> D'acte de Mariage</a></li>
+                    <li> <a href="./Demandes/deces/deces (1).php" target="_blank"> D'acte de Décès</a></li>
+                </ul>
+            </li>
+
+            <li><a href="./index2.html" class="bouton-actif"> visite de la ville</a></li>
+            &nbsp;&nbsp;&nbsp;
+            <li><a href="#contactez-nous"> Nous contacter</a></li>
+            &nbsp;&nbsp;&nbsp;
+            <li> <a href="./Demandes/login/Inscription.php" class="bouton-actif">S'inscrire</a></li>
         </ul>
 
     </nav>
@@ -76,7 +82,7 @@
     </section>
     <div id="motsdumaire" class="mots-du-maire">
         <div class="photo-du-maire">
-            <img src="./photo_du_maire.jpg" alt="photo du Maire">
+            <img src="./images/photo_du_maire.jpg" alt="photo du Maire">
             <p>
                 SANGARET Zié Léonard
                 <br>
@@ -137,6 +143,7 @@
         &nbsp; <h4>Acte de Naissance</h4>
         <p>
             Le délai de déclaration des naissances est passé de 15 jours à 3 mois (Article 41 nouveau de la loi n° 99-691 de la 14/12/99 portant modification de la loi. N°64-374 du 7 octobre 1964). La déclaration de naissance est reçue par l’officier de l’état-civil, « les déclarations de naissance doivent émaner du père ou de la mère, de l’un des ascendants ou des plus proches parents, ou de toute personne ayant assisté à la naissance ou encore, lorsque la mère a accouché hors de son domicile, de la personne chez qui elle a accouché ». Dans la pratique deux cas de figure se présentent généralement aux services de l’état-civil :
+            <br>
             •	Le cas où les parents sont légalement mariés : la déclaration peut être faite par l’une ou l’autre des personnes précitées ou par toute autre personne à condition d’être munie du livret de famille des époux ou de leur acte de mariage, ce qui permettra d’établir automatiquement la filiation de l’enfant conformément à l’article 1 de la loi n°83-799 du 2 août 1983.
                 <br>
                 <br>
@@ -286,15 +293,15 @@
 
         <ul class="Moy-contact">
             <li><h2>Contactez nous par mail</h2></li>
-            <li><a href="mailto:zahkangone@gmail.com">En Cliquant Ici &nbsp;<img src="./img/gmail-logo-24.png" alt=""></a></li>
+            <li><a href="mailto:zahkangone@gmail.com">En Cliquant Ici &nbsp;<img src="./images/icones/gmail-logo-24.png" alt=""></a></li>
         </ul>
 
         <div class="Moy-contact">
             <h2>Nos Reseaux</h2>
             <ul>
-                <li> <a href="https://www.facebook.com/marie.sassandra.75/" target="_blank">Facebook &nbsp;<img src="./img/facebook-square-logo-24.png" alt=""></a></li>
-                <li> <a href="">Twitter  &nbsp;<img src="./img/twitter-logo-24.png" alt=""></a></li>
-                <li> <a href="https://www.youtube.com/watch?v=s3JXvtsGNBw" target="_blank">Youtube  &nbsp;<img src="./img/youtube-logo-24.png" alt=""></a></li>
+                <li> <a href="https://www.facebook.com/marie.sassandra.75/" target="_blank">Facebook &nbsp;<img src="./images/icones/facebook-square-logo-24.png" alt=""></a></li>
+                <li> <a href="">Twitter  &nbsp;<img src="./images/icones/twitter-logo-24.png" alt=""></a></li>
+                <li> <a href="https://www.youtube.com/watch?v=s3JXvtsGNBw" target="_blank">Youtube  &nbsp;<img src="./images/icones/youtube-logo-24.png" alt=""></a></li>
             </ul>
         </div>
 

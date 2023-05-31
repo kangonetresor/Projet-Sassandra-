@@ -1,0 +1,154 @@
+.acteNaiss,
+.acteMarg,
+.acteDeces {
+    width: auto;
+    height: 400px;
+}
+
+
+.img1 {
+    background-image: url(../images/img_demandes/prenoms_bebes_africains.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    z-index: 1;
+}
+
+.img2 {
+    background-image: url(../images/img_demandes/mariage.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    z-index: 1;
+}
+
+.img3 {
+    background-image: url(../images/img_demandes/deces.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    z-index: 1;
+}
+
+.paragraphnaissance,
+.paragraphmariage,
+.paragraphdeces {
+    font-size: 2rem;
+    opacity: initial;
+    text-transform: none;
+    opacity: initial;
+    color: hsl(0, 0%, 100%);
+}
+
+.paragraphmariage,
+.paragraphdeces {
+    margin-top: 300px;
+    margin-left: 50px;
+}
+
+.titre {
+    margin-left: 50px;
+}
+
+.Zone_de_zone {
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    margin-left: 17%;
+}
+
+.div1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+
+}
+
+div>a {
+    margin-left: 800px;
+    text-decoration: none;
+    color: white;
+}
+
+/*
+.label_demandeur {
+    max-width: 600px;
+}
+
+.zone,
+.Parties_entree,
+.sexe {
+    display: flex;
+    flex-direction: row;
+}
+
+.div,
+.Parties_entree,
+.sexe {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.Zone_d_info {
+    border: 1px solid #c7c3c3;
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px 25px 15px 25px;
+    margin-top: 20px;
+    width: 700px;
+    margin-left: 40px;
+}
+
+.titre {
+    text-decoration: none;
+
+    margin-left: 50px;
+    margin-top: 10px;
+    color: white;
+}
+
+.volet_parents {
+    display: flex;
+    flex-direction: column;
+}
+
+.div1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+}
+
+.envoi {
+
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    margin-left: 43%;
+    margin-top: 10px;
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+input {
+    width: 300px;
+    height: 30px;
+}
+
+.sexe_choix {
+    width: auto;
+    height: auto;
+} */

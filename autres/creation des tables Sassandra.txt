@@ -1,0 +1,94 @@
+I_ Naissance
+
+create table info_parents (
+	id_infos_parents int PRIMARY KEY AUTO_INCREMENT,
+	Nom_pere varchar(20),
+	Prenom_pere varchar(50),
+	Nom_mere varchar(20),
+	Prenom_mere varchar(50),
+	Fonction_pere varchar(20),
+	Fonction_mere varchar(20),
+	Contacte_pere int,
+	Contacte_mere int,
+	Lieu_habitation_pere varchar(20),
+	Lieu_habitation_mere varchar(20)
+	);
+    
+create table id_demandeur(
+	id int PRIMARY KEY AUTO_INCREMENT,	
+	Nom_d varchar(20),
+	Prenom_d varchar(50),
+	Lien_parenter varchar(20),
+	Contact int,
+	Date_demande date,
+	id_infos_parents int,
+	foreign key (id_infos_parents) references info_parents (id_infos_parents)
+    );
+    
+create table la_demande (
+	Numero_demande int PRIMARY KEY AUTO_INCREMENT,
+	Nom_e varchar(20),
+	Prenom_e varchar(50),
+	Sexe_e char(1),
+	Nom_maternite varchar(30),
+	Date_naissance date,
+	Lieu_naissance varchar(30),
+	id_infos_parents int,
+	foreign key (id_infos_parents) references info_parents (id_infos_parents)
+	);
+
+	
+
+II_ Mariage
+
+create table infos_generales (
+    id_infos_generales int PRIMARY KEY AUTO_INCREMENT,
+	date_mariage date,
+	nom_mairie varchar(50),
+	nom_epous varchar(20),
+	prenom_epous varchar(50),
+	nom_epouse varchar(20),
+	prenom_epouse varchar(50),
+	regime_matrimoniale varchar(20)
+	);
+	
+create table coordonnees_demandeur (
+    id_coordonnees_demandeur int PRIMARY KEY AUTO_INCREMENT,
+	nom_demandeur varchar(20),
+	prenom_demandeur varchar(50),
+	telephone char(10),
+	ville varchar(50),
+	lien_avec_epous varchar(20),
+	id_infos_generales int,
+	foreign key (id_infos_generales) references infos_generales (id_infos_generales)
+	);
+	
+
+III_ Décès 
+
+create table infos_deces (
+	id_deces int PRIMARY KEY AUTO_INCREMENT,
+	ladate date,
+	Nom_decede varchar(20),
+	prenoom_decede varchar(50),
+	sexe char(1),
+	Nom_pere varchar(20),
+	prenom_pere varchar(50),
+	Nom_mere varchar(20),
+	prenom_mere varchar(50)
+	);
+
+create table id_demandeur(
+	id int PRIMARY KEY AUTO_INCREMENT,	
+	Nom_d varchar(20),
+	Prenom_d varchar(50),
+	Lien_parenter varchar(20),
+	Contact int,
+	Date_demande date,
+	id_deces int,
+	foreign key (id_deces) references info_deces (id_deces)
+   	);
+	
+
+	
+	
