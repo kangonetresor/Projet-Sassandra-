@@ -4,10 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demande d'Acte de décès</title>
+    <title>Demande d'Acte de Naissance</title>
     <link rel="stylesheet" href="../../style.css">
     <link rel="icon" href="../logosassandra.png">
-
     <style>
         p {
             font-size: 25px;
@@ -30,9 +29,25 @@
     <br><br><br><br><br>
 
     <br><br>
-    <p> Vos informations ont ete enregistrer, Vous pouvez maintenant vous connecter</p>
+
     <div style="text-align: center;">
-        <a href="./connexion.php" class="bouton-actif" style="padding: 5px 10px;">Connectez vous</a>
+        <?php
+        if (isset($_POST["submit"])) {
+            $nom = $_POST["nom"];
+            $mail = $_POST["mail"];
+
+            echo 'Merci de vous etes inscrit sur notre page ' . $nom . ', vous pouvez maintenant vous connecter';
+            echo " avec votre email : " . $mail . ".";
+        }
+        ?>
+    </div>
+    <br>
+    <br>
+
+
+    <div style="text-align: center;">
+        <a href="./connexion.php" style="padding: 5px 10px;" class="bouton-actif">Cliquez ici</a>
+
     </div>
 
 </body>

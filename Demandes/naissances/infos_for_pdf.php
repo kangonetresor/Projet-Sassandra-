@@ -7,6 +7,7 @@ if (isset($_POST)) {
         && isset($_POST["Date"]) && !empty($_POST["Date"])
         && isset($_POST["nom_enfant"]) && !empty($_POST["nom_enfant"])
         && isset($_POST["prenom_enfant"]) && !empty($_POST["prenom_enfant"])
+        && isset($_POST["sexe"]) && !empty($_POST["sexe"])
         && isset($_POST["materniter"]) && !empty($_POST["materniter"])
         && isset($_POST["Date_naissance"]) && !empty($_POST["Date_naissance"])
         && isset($_POST["ville_naissance"]) && !empty($_POST["ville_naissance"])
@@ -22,6 +23,7 @@ if (isset($_POST)) {
         $mail = htmlspecialchars($_POST["Mail"]);
         $ladate = htmlspecialchars($_POST["Date"]);
         $nom_e = htmlspecialchars($_POST["nom_enfant"]);
+        $sexe = htmlspecialchars($_POST["sexe"]);
         $prenom_e = htmlspecialchars($_POST["prenom_enfant"]);
         $materniter = htmlspecialchars($_POST["materniter"]);
         $date_naissance = htmlspecialchars($_POST["Date_naissance"]);
@@ -104,6 +106,17 @@ if (isset($_POST)) {
             <div class="div1">
                 <label for="prenom_e" style="color: black;">Prenom de l'enfant : &nbsp;</label>
                 <input type="text" id="prenom_e" name="prenom_enfant" placeholder="Ecrivez le prenom de l'enfant">
+            </div>
+            <div class="div1">
+                <label for="sexe" style="color: black;"> Sexe : </label>
+                <div class="div2">
+                    <input type="radio" id="sexe" name="sexe" value="fils" require>
+                    <label for="sexe" style="color: black;">Masculin</label>
+                </div>
+                <div class="div2">
+                    <input type="radio" id="sexe" name="sexe" value="fille">
+                    <label for="sexe" style="color: black;">Feminin</label>
+                </div>
             </div>
             <div class="div1">
                 <label for="nom_martenote" style="color: black;">Maternité : &nbsp;</label>

@@ -7,6 +7,7 @@ if (isset($_POST["submit"])) {
         isset($_POST["Date"]) && !empty($_POST["Date"])
         && isset($_POST["nom_enfant"]) && !empty($_POST["nom_enfant"])
         && isset($_POST["prenom_enfant"]) && !empty($_POST["prenom_enfant"])
+        && isset($_POST["sexe"]) && !empty($_POST["sexe"])
         && isset($_POST["materniter"]) && !empty($_POST["materniter"])
         && isset($_POST["Date_naissance"]) && !empty($_POST["Date_naissance"])
         && isset($_POST["ville_naissance"]) && !empty($_POST["ville_naissance"])
@@ -22,6 +23,7 @@ if (isset($_POST["submit"])) {
         $ladate = htmlspecialchars($_POST["Date"]);
         $nom_e = htmlspecialchars($_POST["nom_enfant"]);
         $prenom_e = htmlspecialchars($_POST["prenom_enfant"]);
+        $sexe = htmlspecialchars($_POST["sexe"]);
         $materniter = htmlspecialchars($_POST["materniter"]);
         $date_naissance = htmlspecialchars($_POST["Date_naissance"]);
         $ville_naissance = htmlspecialchars($_POST["ville_naissance"]);
@@ -33,8 +35,8 @@ if (isset($_POST["submit"])) {
         $fonction_mere = htmlspecialchars($_POST["fonction_mere"]);
         $habitation_pere = htmlspecialchars($_POST["habitation_pere"]);
         $habitation_mere = htmlspecialchars($_POST["habitation_mere"]);
-        $query = mysqli_query($conn, "INSERT INTO naissance(Date_demande, Nom_e, Prenom_e, Nom_maternite, Date_naissance, Lieu_naissance, Nom_pere, Prenom_pere, Nom_mere, Prenom_mere, Fonction_pere, Fonction_mere, Lieu_habitation_pere, Lieu_habitation_mere) 
-        VALUES ('$ladate', '$nom_e', '$prenom_e', '$materniter', '$date_naissance', '$ville_naissance', '$nom_pere', '$prenom_pere', '$nom_mere', '$prenom_mere', '$fonction_pere', '$fonction_mere','$habitation_pere', '$habitation_mere');");
+        $query = mysqli_query($conn, "INSERT INTO naissance(Date_demande, Nom_e, Prenom_e, sexe, Nom_maternite, Date_naissance, Lieu_naissance, Nom_pere, Prenom_pere, Nom_mere, Prenom_mere, Fonction_pere, Fonction_mere, Lieu_habitation_pere, Lieu_habitation_mere) 
+        VALUES ('$ladate', '$nom_e', '$prenom_e', '$sexe', '$materniter', '$date_naissance', '$ville_naissance', '$nom_pere', '$prenom_pere', '$nom_mere', '$prenom_mere', '$fonction_pere', '$fonction_mere','$habitation_pere', '$habitation_mere');");
 
         if ($query) {
             header("Location:adminfile.php");
@@ -86,6 +88,17 @@ if (isset($_POST["submit"])) {
             <div class="div1">
                 <label for="prenom_e" style="color: black;">Prenom de l'enfant : &nbsp;</label>
                 <input type="text" id="prenom_e" name="prenom_enfant" placeholder="Ecrivez le prenom de l'enfant">
+            </div>
+            <div class="div1">
+                <label for="sexe" style="color: black;"> Sexe : </label>
+                <div class="div2">
+                    <input type="radio" id="sexe" name="sexe" value="Masculin" require>
+                    <label for="sexe" style="color: black;">Masculin</label>
+                </div>
+                <div class="div2">
+                    <input type="radio" id="sexe" name="sexe" value="Feminin">
+                    <label for="sexe" style="color: black;">Feminin</label>
+                </div>
             </div>
             <div class="div1">
                 <label for="nom_martenote" style="color: black;">Maternité : &nbsp;</label>

@@ -31,7 +31,14 @@
 
         <br><br><br> <br><br>
 
-        <p class="titre">
+        <!-- <div class="classement">
+            <a href="#table_naissance"> Naissance</a>
+            <a href="#table_mariage"> Mariage</a>
+            <a href="#table_deces"> Deces</a>
+        </div> -->
+
+
+        <p class="titre" id="table_naissance">
             Informations Sur les demandes d'actes de naissances
         </p>
         <br>
@@ -45,7 +52,7 @@
                 <th>¤ Habitation du père <br> ¤ Habitation de la mère</th>
                 <th>Date de la demande</th>
                 <th>Nom et prenom <br> de l'enfant </th>
-                <!-- <th>Prenom de l'enfant </th> -->
+                <th>Genre</th>
                 <th>Nom de la marternite</th>
                 <th>Date de naissance </th>
                 <th>Lieu de naissance</th>
@@ -61,6 +68,7 @@
                     <td> <?= $naiss['Lieu_habitation_pere']; ?> <br> <?= $naiss['Lieu_habitation_mere']; ?> </td>
                     <td> <?= $naiss['Date_demande']; ?> </td>
                     <td> <?= $naiss['Nom_e']; ?> <?= $naiss['Prenom_e']; ?> </td>
+                    <td> <?= $naiss['sexe']; ?> </td>
                     <td> <?= $naiss['Nom_maternite']; ?> </td>
                     <td> <?= $naiss['Date_naissance']; ?> </td>
                     <td> <?= $naiss['Lieu_naissance']; ?> </td>
@@ -77,7 +85,7 @@
 
         <br><br><br>
 
-        <p class="titre">
+        <p class="titre" id="table_mariage">
             Informations Sur les demandes d'actes de Mariages
         </p>
         <br>
@@ -119,7 +127,7 @@
 
         <br><br><br>
 
-        <p class="titre">
+        <p class="titre" id="table_deces">
             Informations Sur les demandes d'actes de Deces
         </p>
         <br>

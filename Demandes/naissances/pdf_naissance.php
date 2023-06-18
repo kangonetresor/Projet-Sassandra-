@@ -11,6 +11,7 @@ require_once __DIR__ . '/vendor/autoload.php';
 $mail = $_POST["Mail"];
 $ladate = $_POST["Date"];
 $nom_e = $_POST["nom_enfant"];
+$sexe = $_POST["sexe"];
 $prenom_e = $_POST["prenom_enfant"];
 $materniter = $_POST["materniter"];
 $date_naissance = $_POST["Date_naissance"];
@@ -49,15 +50,15 @@ pour l'année ####
 </h2>
 </div> </header>";
 
-$data .= '<div style="text-align: center;"> <h2 class="notransform"> Le : ' . $date_naissance . ' dans la ville de' . $ville_naissance . '</h2>';
+$data .= '<div style="text-align: center;"> <h2 class="notransform"> Le : ' . $date_naissance . ' dans la ville de ' . $ville_naissance . '</h2>';
 
 $data .= '<h2 class="notransform"> à la maternité de : ' . $materniter . '</h2>';
 
 $data .= '<h2 class="notransform"> est née : ' . $nom_e . ' ' . $prenom_e . '</h2>';
 
-$data .= '<h2 class="notransform"> de père : ' . $nom_pere . ' ' . $prenom_pere . '<br> ayant pour fonction : ' . $fonction_pere . '<br> habitant à : ' . $habitation_pere . '</h2>';
+$data .= '<h2 class="notransform"> ' . $sexe . ' de Mr : ' . $nom_pere . ' ' . $prenom_pere . '<br> ayant pour fonction : ' . $fonction_pere . '<br> habitant à : ' . $habitation_pere . '</h2>';
 
-$data .= '<h2 class="notransform"> et de mère : ' . $nom_mere . ' ' . $prenom_mere . '<br> ayant pour fonction : ' . $fonction_mere . '<br> habitant à : ' . $habitation_mere . '</h2>';
+$data .= '<h2 class="notransform"> et de Mme : ' . $nom_mere . ' ' . $prenom_mere . '<br> ayant pour fonction : ' . $fonction_mere . '<br> habitant à : ' . $habitation_mere . '</h2>';
 
 
 $data .= '<h2 class="notransform"> <br>Délivré, le ' . $ladate . '</h2> </div>';

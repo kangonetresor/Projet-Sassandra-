@@ -141,11 +141,11 @@ if (isset($_POST)) {
             <div class="div1">
                 <label for="sexe" style="color: black;"> Sexe : </label>
                 <div class="div2">
-                    <input type="radio" id="sexe" name="sexe" value="M" require>
+                    <input type="radio" id="sexe" name="sexe" value="Masculin" require>
                     <label for="sexe" style="color: black;">Masculin</label>
                 </div>
                 <div class="div2">
-                    <input type="radio" id="sexe" name="sexe" value="F">
+                    <input type="radio" id="sexe" name="sexe" value="Feminin">
                     <label for="sexe" style="color: black;">Feminin</label>
                 </div>
             </div>

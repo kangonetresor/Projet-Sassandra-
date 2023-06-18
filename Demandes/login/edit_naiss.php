@@ -7,6 +7,7 @@ if (isset($_POST["submit"])) {
     $ladate = htmlspecialchars($_POST["Date"]);
     $nom_e = htmlspecialchars($_POST["nom_enfant"]);
     $prenom_e = htmlspecialchars($_POST["prenom_enfant"]);
+    $sexe = htmlspecialchars($_POST["sexe"]);
     $materniter = htmlspecialchars($_POST["materniter"]);
     $date_naissance = htmlspecialchars($_POST["Date_naissance"]);
     $ville_naissance = htmlspecialchars($_POST["ville_naissance"]);
@@ -23,7 +24,7 @@ if (isset($_POST["submit"])) {
         Prenom_pere='$prenom_pere',
         Nom_mere='$nom_mere',Prenom_mere='$prenom_mere',Fonction_pere='$fonction_pere',Fonction_mere='$fonction_mere',
         Lieu_habitation_pere='$habitation_pere',Lieu_habitation_mere='$habitation_mere',Date_demande='$ladate',
-        Nom_e='$nom_e',Prenom_e='$prenom_e',Nom_maternite='$materniter',Date_naissance='$date_naissance',
+        Nom_e='$nom_e',Prenom_e='$prenom_e',sexe='$sexe', Nom_maternite='$materniter',Date_naissance='$date_naissance',
         Lieu_naissance='$ville_naissance' WHERE Numero_demande = '$num_demande' ";
     $query = mysqli_query($conn, $requete);
 
@@ -88,6 +89,17 @@ if (isset($_POST["submit"])) {
             <div class="div1">
                 <label for="prenom_e" style="color: black;">Prenom de l'enfant : &nbsp;</label>
                 <input type="text" id="prenom_e" name="prenom_enfant" value="<?php echo $naiss['Prenom_e']; ?>">
+            </div>
+            <div class="div1">
+                <label for="sexe" style="color: black;"> Sexe : </label>
+                <div class="div2">
+                    <input type="radio" id="sexe" name="sexe" value="Masculin" require>
+                    <label for="sexe" style="color: black;">Masculin</label>
+                </div>
+                <div class="div2">
+                    <input type="radio" id="sexe" name="sexe" value="Feminin">
+                    <label for="sexe" style="color: black;">Feminin</label>
+                </div>
             </div>
             <div class="div1">
                 <label for="nom_martenote" style="color: black;">Maternité : &nbsp;</label>
