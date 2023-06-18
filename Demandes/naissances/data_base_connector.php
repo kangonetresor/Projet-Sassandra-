@@ -12,6 +12,4 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 //Verification de la connexion a la base de donnees
 if ($conn->connect_error) {
     die("La connexion a echoue : " . $conn->connect_error);
-} else {
-    echo "Connexion a la base de donnee reussit  ";
 }

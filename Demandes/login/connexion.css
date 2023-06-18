@@ -7,7 +7,7 @@
 }
 
 body {
-    background: #f6f5f7;
+    background: #675433;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,13 +23,21 @@ body {
     gap: 10px;
 }
 
+
 a {
     text-decoration: none;
     font-size: 20px;
-    color: #733e1d;
-    border: 0.5px solid #733e1d;
+    color: #fff;
+    border: 0.5px solid #d19316;
+    background: #d19316;
     border-radius: 20px;
     padding: 0 5px;
+}
+
+a:hover {
+    background: #fff;
+    color: #d19316;
+    transition: all 0.5s ease;
 }
 
 .container {
